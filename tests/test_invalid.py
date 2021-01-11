@@ -1,9 +1,8 @@
+import sys
 from python_cayennelpp.decoder import decode
 import pytest
-import sys
 
 version = sys.version_info
-
 
 def test_invalid_length():
     with pytest.raises(ValueError) as e:

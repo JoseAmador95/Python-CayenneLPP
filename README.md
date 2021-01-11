@@ -1,18 +1,25 @@
 # Python-CayenneLPP
-[![Build Status](https://travis-ci.org/OlegZv/Python-CayenneLPP.svg?branch=master)](https://travis-ci.org/OlegZv/Python-CayenneLPP)
-[![codecov](https://codecov.io/gh/OlegZv/Python-CayenneLPP/branch/master/graph/badge.svg)](https://codecov.io/gh/OlegZv/Python-CayenneLPP)
-[![PyPI](https://img.shields.io/pypi/v/Python-CayenneLPP)](https://pypi.org/project/Python-CayenneLPP/)
-[![PyPI](https://img.shields.io/pypi/pyversions/Python-CayenneLPP)](https://pypi.org/project/Python-CayenneLPP/)
+
 ## Introduction
+
+This is a fork of [_Python-CayenneLPP_ deocoder from OlegZv](https://github.com/OlegZv/Python-CayenneLPP) meant to be used as a module inside the project directory instead of a global package (Although it can be used this way as well)
+
 Open-source library for python to decode CayenneLPP format payload.
-The Cayenne Low Power Payload (LPP) provides a convenient and easy way to send data over LPWAN networks such as LoRaWAN.
-More details on CayenneLPP payload: https://github.com/myDevicesIoT/cayenne-docs
+The Cayenne Low Power Payload (LPP) provides a convenient and easy way to send data over LPWAN networks such as LoRaWAN. More details on CayenneLPP payload [here](https://github.com/myDevicesIoT/cayenne-docs).
 
 ## Installation
 
-To install the package use next pip command
+This fork is not available in PyPy as [OlegZv's](https://github.com/OlegZv/Python-CayenneLPP) but can be installed using the following command
 
-`pip install python-cayennelpp`
+``` bash
+python setup.py install
+```
+
+or by extracting the (zip version) of the source code into the proyect root directory. If the files are extracted using _lpp_ as the name of the root directory, you can import the files using the following line.
+
+``` python
+from lpp.python-cayennelpp.decoder import decode
+```
 
 ## Usage
 To decode payload simply use method decode() from this package

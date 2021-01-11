@@ -1,4 +1,4 @@
-from python_cayennelpp.methods import hex_library
+from .methods import hex_library
 
 
 def decode(payload):
